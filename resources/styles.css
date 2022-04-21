@@ -50,13 +50,30 @@ main {
   background-color: var(--light);
 }
 
-footer {
+main > h1,
+main > h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  color: var(--dark);
+}
+
+main > p {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: large;
+  color: var(--dark);
+}
+
+.footer {
+  min-height: 52px;
   position: fixed;
   bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
+  padding: 5px 10px;
   width: 100%;
   font-family: "Barlow Condensed", Helvetica, sans-serif;
   font-weight: 700;
@@ -64,14 +81,16 @@ footer {
   text-transform: uppercase;
   color: var(--light);
   background-color: var(--dark);
+  border-top: 3px solid var(--primary);
 }
 
 .credits {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  min-width: 300px;
+  align-items: center;
+  min-width: 350px;
   padding: 5px;
   border: 3px solid var(--primary);
   border-radius: 10px;
+  font-size: large;
 }
