@@ -50,8 +50,8 @@ main {
   background-color: var(--light);
 }
 
-main > h1,
-main > h2,
+main h1,
+main h2,
 h3,
 h4,
 h5,

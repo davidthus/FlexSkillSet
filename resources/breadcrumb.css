@@ -1,0 +1,35 @@
+:root {
+  --primary: hsla(215, 50%, 45%, 1);
+  --dark: hsla(215, 95%, 16%, 1);
+  --light: hsla(215, 94%, 75%, 1);
+}
+
+ul.breadcrumb {
+  padding: 3px 10px;
+  list-style: none;
+  background-color: var(--dark);
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: var(--light);
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: var(--light);
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  text-decoration: underline;
+}
