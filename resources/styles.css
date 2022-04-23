@@ -71,6 +71,7 @@ h5,
 h6 {
   font-family: "Open Sans", Helvetica, sans-serif;
   color: var(--dark);
+  margin: 10px 3px 3px;
 }
 
 main > p {
