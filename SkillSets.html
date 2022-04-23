@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./resources/styles.css" />
-    <link rel="stylesheet" href="./resources/breadcrumb.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
@@ -14,10 +13,17 @@
   <body>
     <header>
       <nav class="navbar">
-        <ul class="breadcrumb">
-          <li><a href="./index.html">Home</a></li>
-          <li>SkillSets</li>
-        </ul>
+        <div class="container">
+          <h1><a href="./index.html">FlexSkillSet</a></h1>
+
+          <div class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./Jobs.html">Jobs</a>
+            <a href="./SkillSets.html" class="active">SkillSets</a>
+            <a href="./Learning.html">Learning</a>
+            <a href="./Contact.html">Contact</a>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
@@ -48,9 +54,7 @@
     </main>
     <footer class="footer">
       <div class="credits">
-        <h2>Credits:</h2>
-        <p>Written 2.0</p>
-        <p>QUIXOTE</p>
+        <p>Project Manager: Written 2.0 / Team Leader: Quixote</p>
       </div>
       <span>&copy; 2022 FlexSkillSet</span>
     </footer>
