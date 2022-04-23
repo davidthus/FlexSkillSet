@@ -15,14 +15,27 @@ html {
   background-color: var(--light);
 }
 
+.active {
+  text-decoration: underline;
+}
+
 header,
-.menu > a {
+header a {
   font-family: "Barlow Condensed", Helvetica, sans-serif;
   font-weight: 700;
   line-height: 1.25;
   margin-bottom: 15px;
   text-transform: uppercase;
   color: var(--light);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: var(--primary);
+}
+
+header h1:hover {
+  color: var(--primary);
 }
 
 .container {
@@ -58,12 +71,19 @@ h5,
 h6 {
   font-family: "Open Sans", Helvetica, sans-serif;
   color: var(--dark);
+  margin: 10px 3px 3px;
 }
 
 main > p {
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: large;
   color: var(--dark);
+}
+
+main img {
+  height: 200px;
+  width: auto;
+  margin-top: 10px;
 }
 
 .footer {
