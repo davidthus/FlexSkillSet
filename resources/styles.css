@@ -15,6 +15,10 @@ html {
   background-color: var(--light);
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* header */
 
 .active {
@@ -87,7 +91,19 @@ main p {
 main img {
   height: 200px;
   width: auto;
-  margin-top: 10px;
+}
+
+.stripes {
+  display: flex;
+  padding: 5px;
+}
+
+#uglyduckling {
+  background-color: hsla(215, 90%, 20%, 0.3);
+}
+
+.article {
+  padding: 10px;
 }
 
 /* footer */
@@ -108,6 +124,22 @@ main img {
   color: var(--light);
   background-color: var(--dark);
   border-top: 3px solid var(--primary);
+}
+
+input[type="submit"] {
+  color: var(--light);
+  background-color: var(--dark);
+  border: 2px var(--primary) solid;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+input[type="email"] {
+  color: var(--light);
+  background-color: var(--dark);
+  border: 2px var(--primary) solid;
+  border-radius: 5px;
+  padding: 3px;
 }
 
 .credits {
