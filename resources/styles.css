@@ -95,7 +95,7 @@ main img {
 
 .stripes {
   display: flex;
-  padding: 5px;
+  padding: 2px;
 }
 
 #uglyduckling {
@@ -132,6 +132,7 @@ input[type="submit"] {
   border: 2px var(--primary) solid;
   border-radius: 5px;
   padding: 3px;
+  cursor: pointer;
 }
 
 input[type="email"] {
