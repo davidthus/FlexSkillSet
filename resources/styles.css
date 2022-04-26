@@ -143,13 +143,8 @@ input[type="email"] {
   padding: 3px;
 }
 
-.credits {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 350px;
-  padding: 5px;
-  border: 3px solid var(--primary);
-  border-radius: 10px;
-  font-size: large;
+.socials img {
+  width: 35px;
+  height: auto;
+  margin: 0 5px;
 }
