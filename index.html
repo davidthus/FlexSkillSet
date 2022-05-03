@@ -14,75 +14,79 @@
     <title>FlexSkillSet</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="navbar">
-        <div class="container">
-          <h1><a href="./index.html">FlexSkillSet</a></h1>
+        <div class="nav-container">
+          <a href="./index.html" class="nav-container__logo">FlexSkillSet</a>
 
-          <div class="menu">
-            <a href="./index.html" class="active">Home</a>
-            <a href="./Jobs.html">Jobs</a>
-            <a href="./SkillSets.html">SkillSets</a>
-            <a href="./Learning.html">Learning</a>
-            <a href="./Contact.html">Contact</a>
+          <div class="menu nav-container__menu">
+            <a href="./index.html" class="menu__menu-item menu__menu-item_active">Home</a>
+            <a href="./Jobs.html" class="menu__menu-item">Jobs</a>
+            <a href="./SkillSets.html" class="menu__menu-item">SkillSets</a>
+            <a href="./Learning.html" class="menu__menu-item">Learning</a>
+            <a href="./Contact.html" class="menu__menu-item">Contact</a>
           </div>
         </div>
       </nav>
     </header>
-    <main>
-      <div class="stripes">
-        <div class="article">
-          <h1>What we do</h1>
-      <p>
-        Here at Flex Skill Set we look at market jobs and speak with recruiters
-        to figure out what are the demanded skills on the market, and where this
-        can be learned. The purpose is to help people understand not just how
-        they can be become better coders but also how they can be the most
-        desired coders in todays economy.
-      </p>
+    <main class="main">
+      <div class="content">
+        <div class="article content__article">
+          <h1 class="article__title">What we do</h1>
+          <p class="article__paragraph">
+            Here at Flex Skill Set we look at market jobs and speak with
+            recruiters to figure out what are the demanded skills on the market,
+            and where this can be learned. The purpose is to help people
+            understand not just how they can be become better coders but also
+            how they can be the most desired coders in todays economy.
+          </p>
         </div>
-      <img src="./img/codingGeneric.jpg" alt="a person coding" />
+        <img src="./img/codingGeneric.jpg" class="content__image" alt="a person coding" />
       </div>
-      <div id="uglyduckling" class="stripes">
-        <img src="./img/updated.jpg" alt="Generic coding image" />
-        <div class="article">
-          <h1>Stay Updated</h1>
-      <p>
-        Have a look at what skills you can learn from zero, which ones are
-        related to your current skill-set so that you improve your "Skill Tree"
-        or CV, and which skills you should "Polish" or update so that employers
-        know you're on top with the latest trends in technology.
-      </p>
+      <div class="content content_stripe">
+        <img src="./img/updated.jpg" class="content__image" alt="Generic coding image" />
+        <div class="article content__article">
+          <h1 class="article__title">Stay Updated</h1>
+          <p class="article__paragraph">
+            Have a look at what skills you can learn from zero, which ones are
+            related to your current skill-set so that you improve your "Skill
+            Tree" or CV, and which skills you should "Polish" or update so that
+            employers know you're on top with the latest trends in technology.
+          </p>
         </div>
       </div>
-      <div class="stripes">
-        <div class="article">
-          <h1>Stay Educated</h1>
-      <p>
-        See a Skill in high demand that you currently dont have? We have your
-        back. We you find tutorials on how to learn it with free or paid
-        resources each reviewed with a description for you to make the best
-        choice that fits your personal learning style..
-      </p>
+      <div class="content">
+        <div class="article content__article">
+          <h1 class="article__title">Stay Educated</h1>
+          <p class="article__paragraph">
+            See a Skill in high demand that you currently dont have? We have
+            your back. We you find tutorials on how to learn it with free or
+            paid resources each reviewed with a description for you to make the
+            best choice that fits your personal learning style..
+          </p>
         </div>
-      <img src="./img/learning.jpg" alt="Artificial Intelligence" />
+        <img src="./img/learning.jpg" class="content__image" alt="Artificial Intelligence" />
       </div>
     </main>
 
     <footer class="footer">
       <div class="socials">
-        <a href="./index.html"><img src="./resources/icons/twitter.png"></a>
-        <a href="./index.html"><img src="./resources/icons/youtube.png"></a>
+        <a href="./index.html" class="socials__link"><img src="./resources/icons/twitter.png" class="socials__image_link" /></a>
+        <a href="./index.html" class="socials__link"><img src="./resources/icons/youtube.png" class="socials__image_link" /></a>
       </div>
-      <div class="newsletter">
-        <form action="">
-          <label for="name">Sign up to our newsletter:</label>
-          <input type="email" id="name" name="name" placeholder="youremail@gmail.com"
-            email size="18">
-          <input type="submit" value="Sign up">
+        <form class="form" action="">
+          <label class="form__label" for="name">Subscribe to our newsletter:</label>
+          <input
+            type="email"
+            class="form__input"
+            name="name"
+            placeholder="youremail@gmail.com"
+            email
+            size="18"
+          />
+          <input class="form__submit" type="submit" value="Subscribe" />
         </form>
-      </div>
-      <span>&copy; 2022 FlexSkillSet</span>
+      <span class="copyright">&copy; 2022 FlexSkillSet</span>
     </footer>
   </body>
 </html>

@@ -21,30 +21,29 @@ html {
 
 /* header */
 
-.active {
-  text-decoration: underline;
-}
-
-header,
-header a {
+.nav-container__logo,
+.menu__menu-item {
   font-family: "Barlow Condensed", Helvetica, sans-serif;
   font-weight: 700;
   line-height: 1.25;
-  margin-bottom: 15px;
   text-transform: uppercase;
   color: var(--light);
   text-decoration: none;
 }
 
-header a:hover {
+.menu__menu-item_active {
+  text-decoration: underline;
+}
+
+.menu__menu-item:hover {
   color: var(--primary);
 }
 
-header h1:hover {
+.nav-container__logo:hover {
   color: var(--primary);
 }
 
-.container {
+.nav-container {
   max-width: 1920px;
   margin: 0 auto;
   display: flex;
@@ -65,48 +64,39 @@ header h1:hover {
 
 /* main section */
 
-main {
+.main {
   margin: 100px auto;
   background-color: var(--light);
 }
 
-main h1,
-main h2,
-h3,
-h4,
-h5,
-h6 {
+.article__title {
   font-family: "Open Sans", Helvetica, sans-serif;
   color: var(--dark);
   margin: 10px 3px 3px;
 }
 
-main p {
+.article__paragraph {
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: large;
   color: var(--dark);
 }
 
-main img {
+.content__image {
   height: 200px;
   width: auto;
 }
 
-.stripes {
+.content {
   display: flex;
   padding: 2px 10%;
 }
 
-#uglyduckling {
+.content_stripe {
   background-color: hsla(215, 90%, 20%, 0.3);
 }
 
 .article {
   padding: 10px;
-}
-
-.content {
-  margin: 0 10%;
 }
 
 /* footer */
@@ -129,7 +119,15 @@ main img {
   border-top: 3px solid var(--primary);
 }
 
-input[type="submit"] {
+.form__input {
+  color: var(--light);
+  background-color: var(--dark);
+  border: 2px var(--primary) solid;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.form__submit {
   color: var(--light);
   background-color: var(--dark);
   border: 2px var(--primary) solid;
@@ -138,15 +136,7 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-input[type="email"] {
-  color: var(--light);
-  background-color: var(--dark);
-  border: 2px var(--primary) solid;
-  border-radius: 5px;
-  padding: 3px;
-}
-
-.socials img {
+.socials__image_link {
   width: 35px;
   height: auto;
   margin: 0 5px;
