@@ -16,7 +16,7 @@ main h1 {
 }
 
 main h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 main p {
@@ -35,35 +35,55 @@ button {
   font-weight: 700;
   line-height: 1.25;
   text-transform: uppercase;
-  border: 0px solid var(--primary);
+  border: 3px solid var(--dark);
+  background-color: var(--primary);
+  color: var(--dark);
+}
+
+button:hover {
   background-color: var(--dark);
   color: var(--light);
 }
 
-button:hover {
-  color: var(--primary);
+main aside {
+  display: flex;
+  align-items: center;
 }
 
 /* second section */
 
 .second {
   background-color: hsla(215, 90%, 20%, 0.3);
-  margin-top: 40px;
-  height: 300px;
+  margin-top: 30px;
+  height: 30em;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
-.second h2 {
+#secondcontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#secondtitle {
+  margin: 10px;
   text-align: center;
+  height: auto;
 }
 
 .collaborators {
-  width: 50%;
-  margin: 0 auto;
+  width: 40%;
+  margin: 30px auto;
   display: flex;
+  justify-content: space-between;
 }
 
 .second img {
-  width: 40px;
+  width: 60px;
   height: auto;
-  margin: 30px;
+}
+
+.second img + img {
+  margin-left: 20px;
 }
