@@ -10,22 +10,22 @@
   column-gap: 20px;
 }
 
-main h1 {
+.article__title {
   font-size: 4rem;
   text-align: center;
 }
 
-main h2 {
+.content__title_collabs {
   font-size: 3rem;
 }
 
-main p {
+.article__paragraph {
   text-transform: none;
   font-size: 2rem;
   margin: 20px;
 }
 
-button {
+.article__cta {
   width: 30%;
   height: 3em;
   margin: 10px 35%;
@@ -40,19 +40,19 @@ button {
   color: var(--dark);
 }
 
-button:hover {
+.article__cta:hover {
   background-color: var(--dark);
   color: var(--light);
 }
 
-main aside {
+content__image {
   display: flex;
   align-items: center;
 }
 
 /* second section */
 
-.second {
+.content_collabs {
   background-color: hsla(215, 90%, 20%, 0.3);
   margin-top: 30px;
   height: 30em;
@@ -61,29 +61,21 @@ main aside {
   flex-direction: column;
 }
 
-#secondcontainer {
-  display: flex;
-  flex-direction: column;
-}
-
-#secondtitle {
+.content__title_collabs {
   margin: 10px;
   text-align: center;
   height: auto;
 }
 
-.collaborators {
+.content__collaborators {
   width: 40%;
   margin: 30px auto;
   display: flex;
   justify-content: space-between;
 }
 
-.second img {
+.collaborators__logo {
   width: 60px;
   height: auto;
-}
-
-.second img + img {
-  margin-left: 20px;
+  margin: 10px;
 }
