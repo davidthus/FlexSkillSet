@@ -1,0 +1,9 @@
+@use "../util/" as util;
+
+.socials {
+  &__image_link {
+    width: 35px;
+    height: auto;
+    margin: 0 5px;
+  }
+}

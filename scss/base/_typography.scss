@@ -22,10 +22,8 @@
 //     U+FEFF, U+FFFD;
 // }
 
-h1,
-h2,
-h3 {
-  // font-family: "Barlow Condensed", Helvetica, sans-serif;
+header, footer {
+  font-family: "Barlow Condensed", Helvetica, sans-serif;
   font-weight: 700;
   line-height: 1.25;
   text-transform: uppercase;

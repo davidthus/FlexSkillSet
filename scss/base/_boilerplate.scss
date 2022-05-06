@@ -1,4 +1,4 @@
-@use '../util/';
+@use '../util/' as util;
 
 html {
   box-sizing: border-box;
@@ -13,6 +13,10 @@ body {
   padding: 0;
   margin: 0;
   font-family: util.$font-p;
-  background-color: var(--light);
-  color: var(--dark);
+  background-color: util.$light;
+  color: util.$dark;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

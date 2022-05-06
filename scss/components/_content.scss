@@ -1,0 +1,31 @@
+@use "../util/" as util;
+
+.content {
+  display: flex;
+  padding: 2px 10%;
+
+  &__image {
+    height: 200px;
+    width: auto;
+  }
+
+  &_stripe {
+    background-color: util.$stripe;
+  }
+}
+
+.article {
+  padding: 10px;
+
+  &__title {
+    font-family: util.$font-titles;
+    color: util.$dark;
+    margin: 2px 3px 5px;
+  }
+  
+  &__paragraph {
+    font-family: util.$font-p;
+    font-size: large;
+    color: util.$dark;
+  }
+}

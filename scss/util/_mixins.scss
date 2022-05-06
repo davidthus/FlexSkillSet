@@ -1,5 +1,17 @@
-@mixin flexCenter ($direction){
-  justify-content: center;
+@mixin flex ($justify, $direction){
+  display: flex;
+  justify-content: $justify;
   align-items: center;
   flex-direction: $direction;
+}
+
+@mixin barlow {
+  font-family: "Barlow Condensed", Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+@mixin transition {
+  transition: 0.6s;
 }

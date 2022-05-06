@@ -1,0 +1,6 @@
+@use "../util/" as util;
+
+.main {
+  padding: 100px 0;
+  background-color: util.$light;
+}
