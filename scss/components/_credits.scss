@@ -1,0 +1,9 @@
+@use "../util/" as util;
+
+.credits {
+  @include util.flex(center, row);
+
+  &__paragraph {
+    margin: 0;
+  }
+}

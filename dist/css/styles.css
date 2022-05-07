@@ -131,6 +131,16 @@ a:active {
   margin: 0 5px;
 }
 
+.credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.credits__paragraph {
+  margin: 0;
+}
+
 .footer {
   min-height: 52px;
   position: fixed;
@@ -151,6 +161,6 @@ a:active {
 }
 
 .main {
-  padding: 100px 0;
+  padding: 6.5em 0;
   background-color: hsl(215deg, 94%, 75%);
 }/*# sourceMappingURL=styles.css.map */
