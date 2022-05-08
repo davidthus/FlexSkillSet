@@ -1,3 +1,21 @@
+@use "../util/" as util;
+
+header, footer {
+  @include util.barlow;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
 // @font-face {
 //   font-family: "Roboto";
 //   font-style: normal;
@@ -21,21 +39,3 @@
 //     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
 //     U+FEFF, U+FFFD;
 // }
-
-header, footer {
-  font-family: "Barlow Condensed", Helvetica, sans-serif;
-  font-weight: 700;
-  line-height: 1.25;
-  text-transform: uppercase;
-  margin-top: 0;
-}
-
-p {
-  margin-top: 0;
-}
-
-a,
-a:visited,
-a:active {
-  text-decoration: none;
-}

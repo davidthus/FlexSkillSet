@@ -29,6 +29,7 @@ header, footer {
 
 p {
   margin-top: 0;
+  font-size: 1.1rem;
 }
 
 a,
@@ -194,21 +195,24 @@ a:active {
   height: 30em;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   flex-direction: column;
 }
 .content__title_collabs {
-  margin: 10px;
-  text-align: center;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 2rem;
+  margin: 20px;
   height: auto;
 }
 .content__collaborators {
   width: 40%;
-  margin: 30px auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
 
-.collaborators__logo {
+.collaborators__logos {
   width: 60px;
   height: auto;
   margin: 10px;
