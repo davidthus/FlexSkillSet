@@ -1,0 +1,20 @@
+@use "../util" as util;
+
+.form {
+  &__input {
+    color: util.$light;
+    background-color: util.$dark;
+    border: 2px util.$primary solid;
+    border-radius: 5px;
+    padding: 3px;
+  }
+  
+  &__submit {
+    color: util.$light;
+    background-color: util.$dark;
+    border: 2px util.$primary solid;
+    border-radius: 5px;
+    padding: 3px;
+    cursor: pointer;
+  }
+}

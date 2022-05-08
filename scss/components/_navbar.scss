@@ -1,0 +1,45 @@
+@use "../util/" as util;
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: util.$dark;
+  padding: 16px 32px;
+  border-bottom: 3px solid util.$primary;
+}
+
+.nav-container {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    @include util.barlow;
+    color: util.$light;
+    text-decoration: none;
+    font-size: 1.5rem;
+    @include util.transition;
+
+    &:hover {
+      color: util.$primary;
+    }
+  }
+}
+
+.menu__menu-item {
+  @include util.barlow;
+  @include util.transition;
+  color: util.$light;
+
+  &_active {
+    text-decoration: underline;
+  }
+
+  &:hover {
+    color: util.$primary;
+  }
+}

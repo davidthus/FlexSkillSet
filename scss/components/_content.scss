@@ -1,0 +1,15 @@
+@use "../util/" as util;
+
+.content {
+  display: flex;
+  padding: 2px 10%;
+
+  &__image {
+    height: 200px;
+    width: auto;
+  }
+
+  &_stripe {
+    background-color: util.$stripe;
+  }
+}

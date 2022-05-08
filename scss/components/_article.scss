@@ -1,0 +1,36 @@
+@use "../util/" as util;
+
+.article {
+  padding: 10px;
+  @include util.flex(center, column);
+
+  &__title {
+    font-family: util.$font-titles;
+    font-size: 2rem;
+    color: util.$dark;
+    margin: 2px 3px 5px;
+  }
+  
+  &__paragraph {
+    font-family: util.$font-p;
+    font-size: large;
+    color: util.$dark;
+  }
+
+  &__cta {
+      width: 7em;
+      height: 2.5em;
+      border-radius: 20px;
+      font-size: 1.5rem;
+      @include util.barlow;
+      @include util.transition;
+      border: 3px solid util.$dark;
+      background-color: util.$primary;
+      color: util.$dark;
+
+      &:hover {
+        background-color: util.$dark;
+        color: util.$light;
+      }
+  }
+}

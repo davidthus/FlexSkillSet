@@ -1,0 +1,219 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", Helvetica, sans-serif;
+  background-color: hsl(215deg, 94%, 75%);
+  color: hsl(215deg, 95%, 16%);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+header, footer {
+  font-family: "Barlow Condensed", Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: hsl(215deg, 95%, 16%);
+  padding: 16px 32px;
+  border-bottom: 3px solid hsl(215deg, 50%, 45%);
+}
+
+.nav-container {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-container__logo {
+  font-family: "Barlow Condensed", Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: hsl(215deg, 94%, 75%);
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: 0.6s;
+}
+.nav-container__logo:hover {
+  color: hsl(215deg, 50%, 45%);
+}
+
+.menu__menu-item {
+  font-family: "Barlow Condensed", Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+  transition: 0.6s;
+  color: hsl(215deg, 94%, 75%);
+}
+.menu__menu-item_active {
+  text-decoration: underline;
+}
+.menu__menu-item:hover {
+  color: hsl(215deg, 50%, 45%);
+}
+
+.content {
+  display: flex;
+  padding: 2px 10%;
+}
+.content__image {
+  height: 200px;
+  width: auto;
+}
+.content_stripe {
+  background-color: hsla(215deg, 90%, 20%, 0.3);
+}
+
+.form__input {
+  color: hsl(215deg, 94%, 75%);
+  background-color: hsl(215deg, 95%, 16%);
+  border: 2px hsl(215deg, 50%, 45%) solid;
+  border-radius: 5px;
+  padding: 3px;
+}
+.form__submit {
+  color: hsl(215deg, 94%, 75%);
+  background-color: hsl(215deg, 95%, 16%);
+  border: 2px hsl(215deg, 50%, 45%) solid;
+  border-radius: 5px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.socials__image_link {
+  width: 35px;
+  height: auto;
+  margin: 0 5px;
+}
+
+.credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.credits__paragraph {
+  margin: 0;
+}
+
+.article {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.article__title {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 2rem;
+  color: hsl(215deg, 95%, 16%);
+  margin: 2px 3px 5px;
+}
+.article__paragraph {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: large;
+  color: hsl(215deg, 95%, 16%);
+}
+.article__cta {
+  width: 7em;
+  height: 2.5em;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  font-family: "Barlow Condensed", Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+  transition: 0.6s;
+  border: 3px solid hsl(215deg, 95%, 16%);
+  background-color: hsl(215deg, 50%, 45%);
+  color: hsl(215deg, 95%, 16%);
+}
+.article__cta:hover {
+  background-color: hsl(215deg, 95%, 16%);
+  color: hsl(215deg, 94%, 75%);
+}
+
+.footer {
+  min-height: 52px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 5px 10px;
+  width: 100%;
+  font-family: "Barlow Condensed", Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: hsl(215deg, 94%, 75%);
+  background-color: hsl(215deg, 95%, 16%);
+  border-top: 3px solid hsl(215deg, 50%, 45%);
+}
+
+.main {
+  padding: 6.5em 0;
+  background-color: hsl(215deg, 94%, 75%);
+}
+
+.content_collabs {
+  background-color: hsla(215deg, 90%, 20%, 0.3);
+  margin-top: 30px;
+  height: 30em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.content__title_collabs {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 2rem;
+  margin: 20px;
+  height: auto;
+}
+.content__collaborators {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.collaborators__logos {
+  width: 60px;
+  height: auto;
+  margin: 10px;
+}/*# sourceMappingURL=styles.css.map */

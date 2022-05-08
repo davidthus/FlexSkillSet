@@ -1,42 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./resources/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
-  <title>Learning</title>
-</head>
-<body>
-  <header>
-    <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Learning</title>
+  </head>
+  <body>
+    <header class="header">
       <nav class="navbar">
-        <div class="container">
-          <h1><a href="./index.html">FlexSkillSet</a></h1>
+        <div class="nav-container">
+          <a href="./index.html" class="nav-container__logo">FlexSkillSet</a>
 
-          <div class="menu">
-            <a href="./index.html">Home</a>
-            <a href="./Jobs.html">Jobs</a>
-            <a href="./SkillSets.html">SkillSets</a>
-            <a href="./Learning.html" class="active">Learning</a>
-            <a href="./Contact.html">Contact</a>
+          <div class="menu nav-container__menu">
+            <a href="./index.html" class="menu__menu-item">Home</a>
+            <a href="./Jobs.html" class="menu__menu-item">Jobs</a>
+            <a href="./SkillSets.html" class="menu__menu-item">SkillSets</a>
+            <a
+              href="./Learning.html"
+              class="menu__menu-item menu__menu-item_active"
+              >Learning</a
+            >
+            <a href="./Contact.html" class="menu__menu-item">Contact</a>
           </div>
         </div>
       </nav>
     </header>
-  <main>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem explicabo nobis nihil sapiente, ullam debitis odit consequuntur, voluptate, libero perferendis hic cum ad a. Laboriosam possimus sit ipsa amet quisquam.</p>
-      <p>Similique quis hic blanditiis molestiae perferendis quod reprehenderit sunt minima alias, maiores, quisquam ipsam sapiente non itaque numquam optio veritatis explicabo dolores necessitatibus sit. Laboriosam quaerat itaque deserunt non id?</p>
-      <p>Inventore numquam aspernatur saepe quod in, ipsum, pariatur neque veritatis dignissimos, necessitatibus atque labore blanditiis consequuntur? Aspernatur deleniti aut libero repudiandae tempore veritatis quasi laboriosam. Ipsa est cum minima. Nemo?</p>
-  </main>
-  <footer class="footer">
-    <div class="credits">
-      <p>Project Manager: Written 2.0 / Team Leader: Quixote</p>
-    </div>
-    <span>&copy; 2022 FlexSkillSet</span>
-  </footer>
-</body>
+    <main class="main">
+      <section class="content">
+          <article class="article content__article">
+            <h1 class="article__title">Learn without limits</h1>
+            <p class="article__paragraph">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
+              tenetur praesentium dicta quaerat modi, consequatur optio ipsa
+              fuga reprehenderit necessitatibus sed molestias beatae nostrum
+              voluptates quas temporibus nobis? Aliquam, maxime!
+            </p>
+            <button class="article__cta">JOIN</button>
+          </article>
+          <img src="./dist/img/updated.jpg" class="content__image" alt="" />
+      </section>
+      <section class="content content_collabs">
+        <h2 class="content__title_collabs">We collaborate with everyone</h2>
+        <div class="collaborators content_collaborators">
+          <!-- some company logos :O -->
+          <img
+            src="./dist/icons/twitter.png"
+            class="collaborators__logos"
+            alt=""
+          />
+          <img
+            src="./dist/icons/twitter.png"
+            class="collaborators__logos"
+            alt=""
+          />
+          <img
+            src="./dist/icons/twitter.png"
+            class="collaborators__logos"
+            alt=""
+          />
+          <img
+            src="./dist/icons/twitter.png"
+            class="collaborators__logos"
+            alt=""
+          />
+          <img
+            src="./dist/icons/twitter.png"
+            class="collaborators__logos"
+            alt=""
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="credits">
+        <p class="credits__paragraph">
+          Project Manager: Written 2.0 / Team Leader: Quixote
+        </p>
+      </div>
+      <span class="copyright">&copy; 2022 FlexSkillSet</span>
+    </footer>
+  </body>
 </html>
