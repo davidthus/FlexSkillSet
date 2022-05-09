@@ -5,9 +5,9 @@
   top: 0;
   width: 100%;
   z-index: 99;
-  background-color: util.$dark;
+  background-color: util.$neutral;
   padding: 16px 32px;
-  border-bottom: 3px solid util.$primary;
+  border-bottom: 3px solid util.$neutral-light;
 }
 
 .nav-container {
@@ -19,27 +19,23 @@
 
   &__logo {
     @include util.barlow;
-    color: util.$light;
+    @include util.transition;
+    color: util.$blue;
     text-decoration: none;
     font-size: 1.5rem;
-    @include util.transition;
-
-    &:hover {
-      color: util.$primary;
-    }
   }
 }
 
 .menu__menu-item {
   @include util.barlow;
   @include util.transition;
-  color: util.$light;
+  color: util.$blue;
 
   &_active {
     text-decoration: underline;
   }
 
   &:hover {
-    color: util.$primary;
+    color: util.$white;
   }
 }
