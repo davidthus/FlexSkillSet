@@ -1,3 +1,5 @@
+@use "../util/variables" as var;
+
 @mixin flex ($justify, $direction){
   display: flex;
   justify-content: $justify;
@@ -6,7 +8,7 @@
 }
 
 @mixin barlow {
-  font-family: "Barlow Condensed", Helvetica, sans-serif;
+  font-family: var.$barlowcondensed;
   font-weight: 700;
   line-height: 1.25;
   text-transform: uppercase;

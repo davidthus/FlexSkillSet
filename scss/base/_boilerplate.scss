@@ -1,4 +1,4 @@
-@use '../util/' as util;
+@use "../util/" as util;
 
 html {
   box-sizing: border-box;
@@ -12,9 +12,9 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: util.$font-p;
-  background-color: util.$light;
-  color: util.$dark;
+  font-family: util.$roboto;
+  background-color: util.$neutral;
+  color: util.$white;
 }
 
 ::-webkit-scrollbar {

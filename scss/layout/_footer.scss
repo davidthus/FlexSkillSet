@@ -1,14 +1,14 @@
 @use "../util/" as util;
 
 .footer {
-  min-height: 52px;
-  position: fixed;
-  bottom: 0;
+  @include util.barlow;
   @include util.flex(space-between, row);
+  position: fixed;
+  min-height: 52px;
+  bottom: 0;
   padding: 5px 10px;
   width: 100%;
-  @include util.barlow;
-  color: util.$light;
-  background-color: util.$dark;
-  border-top: 3px solid util.$primary;
+  color: util.$blue;
+  background-color: util.$neutral;
+  border-top: 3px solid util.$neutral-light;
 }

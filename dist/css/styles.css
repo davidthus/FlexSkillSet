@@ -11,8 +11,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Roboto", Helvetica, sans-serif;
-  background-color: hsl(215deg, 94%, 75%);
-  color: hsl(215deg, 95%, 16%);
+  background-color: #000413;
+  color: #FFFFFF;
 }
 
 ::-webkit-scrollbar {
@@ -43,9 +43,9 @@ a:active {
   top: 0;
   width: 100%;
   z-index: 99;
-  background-color: hsl(215deg, 95%, 16%);
+  background-color: #000413;
   padding: 16px 32px;
-  border-bottom: 3px solid hsl(215deg, 50%, 45%);
+  border-bottom: 3px solid #25222F;
 }
 
 .nav-container {
@@ -60,13 +60,10 @@ a:active {
   font-weight: 700;
   line-height: 1.25;
   text-transform: uppercase;
-  color: hsl(215deg, 94%, 75%);
+  transition: 0.6s;
+  color: #3864C2;
   text-decoration: none;
   font-size: 1.5rem;
-  transition: 0.6s;
-}
-.nav-container__logo:hover {
-  color: hsl(215deg, 50%, 45%);
 }
 
 .menu__menu-item {
@@ -75,13 +72,13 @@ a:active {
   line-height: 1.25;
   text-transform: uppercase;
   transition: 0.6s;
-  color: hsl(215deg, 94%, 75%);
+  color: #3864C2;
 }
 .menu__menu-item_active {
   text-decoration: underline;
 }
 .menu__menu-item:hover {
-  color: hsl(215deg, 50%, 45%);
+  color: #FFFFFF;
 }
 
 .content {
@@ -93,20 +90,20 @@ a:active {
   width: auto;
 }
 .content_stripe {
-  background-color: hsla(215deg, 90%, 20%, 0.3);
+  background-color: #25222F;
 }
 
 .form__input {
-  color: hsl(215deg, 94%, 75%);
-  background-color: hsl(215deg, 95%, 16%);
-  border: 2px hsl(215deg, 50%, 45%) solid;
+  color: #3864C2;
+  background-color: #000413;
+  border: 2px #3864C2 solid;
   border-radius: 5px;
   padding: 3px;
 }
 .form__submit {
-  color: hsl(215deg, 94%, 75%);
-  background-color: hsl(215deg, 95%, 16%);
-  border: 2px hsl(215deg, 50%, 45%) solid;
+  color: #3864C2;
+  background-color: #000413;
+  border: 2px #3864C2 solid;
   border-radius: 5px;
   padding: 3px;
   cursor: pointer;
@@ -138,59 +135,60 @@ a:active {
 .article__title {
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 2rem;
-  color: hsl(215deg, 95%, 16%);
+  color: #FF9721;
   margin: 2px 3px 5px;
 }
 .article__paragraph {
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: large;
-  color: hsl(215deg, 95%, 16%);
+  color: #FFFFFF;
 }
 .article__cta {
-  width: 7em;
-  height: 2.5em;
-  border-radius: 20px;
-  font-size: 1.5rem;
   font-family: "Barlow Condensed", Helvetica, sans-serif;
   font-weight: 700;
   line-height: 1.25;
   text-transform: uppercase;
   transition: 0.6s;
-  border: 3px solid hsl(215deg, 95%, 16%);
-  background-color: hsl(215deg, 50%, 45%);
-  color: hsl(215deg, 95%, 16%);
+  width: 7em;
+  height: 2.5em;
+  font-size: 1.5rem;
+  border: 1px solid #3864C2;
+  border-radius: 20px;
+  background-color: #000413;
+  color: #3864C2;
 }
 .article__cta:hover {
-  background-color: hsl(215deg, 95%, 16%);
-  color: hsl(215deg, 94%, 75%);
+  border: 2px solid #3864C2;
+  border-radius: 20px;
+  background-color: #25222F;
 }
 
 .footer {
-  min-height: 52px;
-  position: fixed;
-  bottom: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  padding: 5px 10px;
-  width: 100%;
   font-family: "Barlow Condensed", Helvetica, sans-serif;
   font-weight: 700;
   line-height: 1.25;
   text-transform: uppercase;
-  color: hsl(215deg, 94%, 75%);
-  background-color: hsl(215deg, 95%, 16%);
-  border-top: 3px solid hsl(215deg, 50%, 45%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+  min-height: 52px;
+  bottom: 0;
+  padding: 5px 10px;
+  width: 100%;
+  color: #3864C2;
+  background-color: #000413;
+  border-top: 3px solid #25222F;
 }
 
 .main {
   padding: 6.5em 0;
-  background-color: hsl(215deg, 94%, 75%);
+  background-color: #000413;
 }
 
 .content_collabs {
-  background-color: hsla(215deg, 90%, 20%, 0.3);
+  background-color: #25222F;
   margin-top: 30px;
   height: 30em;
   display: flex;
@@ -201,6 +199,7 @@ a:active {
 .content__title_collabs {
   font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 2rem;
+  color: #FF9721;
   margin: 20px;
   height: auto;
 }

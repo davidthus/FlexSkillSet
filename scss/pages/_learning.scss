@@ -2,15 +2,16 @@
 
 .content {
   &_collabs {
-    background-color: util.$stripe;
+    background-color: util.$neutral-light;
     margin-top: 30px;
     height: 30em;
     @include util.flex(flex-start, column);
   }
 
   &__title_collabs {
-    font-family: util.$font-titles;
+    font-family: util.$opensans;
     font-size: 2rem;
+    color: util.$orange;
     margin: 20px;
     height: auto;
   }

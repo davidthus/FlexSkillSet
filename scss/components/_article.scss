@@ -5,32 +5,33 @@
   @include util.flex(center, column);
 
   &__title {
-    font-family: util.$font-titles;
+    font-family: util.$opensans;
     font-size: 2rem;
-    color: util.$dark;
+    color: util.$orange;
     margin: 2px 3px 5px;
   }
-  
+
   &__paragraph {
-    font-family: util.$font-p;
+    font-family: util.$roboto;
     font-size: large;
-    color: util.$dark;
+    color: util.$white;
   }
 
   &__cta {
-      width: 7em;
-      height: 2.5em;
-      border-radius: 20px;
-      font-size: 1.5rem;
-      @include util.barlow;
-      @include util.transition;
-      border: 3px solid util.$dark;
-      background-color: util.$primary;
-      color: util.$dark;
+    @include util.barlow;
+    @include util.transition;
+    width: 7em;
+    height: 2.5em;
+    font-size: 1.5rem;
+    border: 1px solid util.$blue;
+    border-radius: 20px;
+    background-color: util.$neutral;
+    color: util.$blue;
 
-      &:hover {
-        background-color: util.$dark;
-        color: util.$light;
-      }
+    &:hover {
+      border: 2px solid util.$blue;
+      border-radius: 20px;
+      background-color: util.$neutral-light;
+    }
   }
 }
