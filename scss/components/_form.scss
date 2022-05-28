@@ -10,11 +10,67 @@
   }
   
   &__submit {
-    color: util.$blue;
+    color: util.$orange;
     background-color: util.$neutral;
     border: 2px util.$blue solid;
     border-radius: 5px;
     padding: 3px;
     cursor: pointer;
+  }
+
+  // CONTACT MODIFIER
+
+  &_input__contact {
+    color: util.$blue;
+    background-color: util.$neutral;
+    border: 2px util.$blue solid;
+    height: 40px;
+    width: 400px;
+    border-radius: 14px;
+    padding: 5px 20px;
+    margin-top: 20px;
+    color: util.$orange;
+    font-family: util.$roboto;
+    font-size: 1rem;
+  }
+
+  
+  &_textarea__contact {
+    color: util.$blue;
+    height: 150px;
+    width: 400px;
+    color: util.$orange;
+    font-family: util.$roboto;
+    font-size: 1rem;
+    background-color: util.$neutral;
+    border: 2px util.$blue solid;
+    border-radius: 14px;
+    padding: 3px;
+    margin-top: 20px;
+    padding: 5px 20px;
+    resize: none;
+  }
+
+  &_submit__contact {
+    width: 130px;
+    height: 40px;
+    font-weight: bold;
+    color: util.$orange;
+    background-color: util.$neutral;
+    border: 1px util.$orange solid;
+    border-radius: 14px;
+    padding: 3px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+
+  &__contact {
+    background-color: util.$neutral-light;
+    border-radius: 20px;
+    width: 50%;
+    height: 600px;
+    max-width: 600px;
+    margin: 0 auto;
+    @include util.flex(center, column);
   }
 }
