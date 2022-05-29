@@ -101,12 +101,65 @@ a:active {
   padding: 3px;
 }
 .form__submit {
-  color: #3864C2;
+  color: #FF9721;
   background-color: #000413;
   border: 2px #3864C2 solid;
   border-radius: 5px;
   padding: 3px;
   cursor: pointer;
+}
+.form_input__contact {
+  color: #3864C2;
+  background-color: #000413;
+  border: 2px #3864C2 solid;
+  height: 40px;
+  width: 400px;
+  border-radius: 14px;
+  padding: 5px 20px;
+  margin-top: 20px;
+  color: #FF9721;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 1rem;
+}
+.form_textarea__contact {
+  color: #3864C2;
+  height: 150px;
+  width: 400px;
+  color: #FF9721;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 1rem;
+  background-color: #000413;
+  border: 2px #3864C2 solid;
+  border-radius: 14px;
+  padding: 3px;
+  margin-top: 20px;
+  padding: 5px 20px;
+  resize: none;
+}
+.form_submit__contact {
+  width: 130px;
+  height: 40px;
+  font-weight: bold;
+  color: #FF9721;
+  background-color: #000413;
+  border: 1px #FF9721 solid;
+  border-radius: 14px;
+  padding: 3px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.form__contact {
+  background-color: #25222F;
+  border-radius: 20px;
+  width: 50%;
+  min-width: 450px;
+  height: 600px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .socials__image_link {
