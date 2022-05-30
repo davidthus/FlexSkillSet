@@ -147,6 +147,11 @@ a:active {
   padding: 3px;
   cursor: pointer;
   margin-top: 30px;
+  transition: 0.6s;
+}
+.form_submit__contact:hover {
+  background-color: #FF9721;
+  color: #000413;
 }
 .form__contact {
   background-color: #25222F;

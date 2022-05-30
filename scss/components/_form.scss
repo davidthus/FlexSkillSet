@@ -62,6 +62,12 @@
     padding: 3px;
     cursor: pointer;
     margin-top: 30px;
+    @include util.transition;
+
+    &:hover {
+      background-color: util.$orange;
+      color: util.$neutral;
+    }
   }
 
   &__contact {
