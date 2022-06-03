@@ -231,9 +231,63 @@ a:active {
 .slider-wrapper__item {
   width: 100vw;
   display: flex;
-  justify-content: column;
+  justify-content: center;
   align-items: center;
-  flex-direction: center;
+  flex-direction: row;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.item__title {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 2rem;
+  color: #FF9721;
+  margin: 10px 0;
+}
+.item__image {
+  height: 200px;
+  width: auto;
+}
+.item__button {
+  width: 130px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #FF9721;
+  background-color: #000413;
+  border: 1px #FF9721 solid;
+  border-radius: 14px;
+  padding: 3px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: 0.6s;
+  font-family: "Barlow Condensed", Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+.item__button:hover {
+  background-color: #FF9721;
+  color: #000413;
+}
+
+.arrow {
+  background-color: #FF9721;
+  width: 30px;
+  height: 30px;
+  margin: 15px;
+}
+.arrow_left {
+  -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
+          clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+.arrow_right {
+  -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+          clip-path: polygon(100% 50%, 0 0, 0 100%);
 }
 
 .footer {

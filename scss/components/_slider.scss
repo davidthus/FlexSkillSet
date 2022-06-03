@@ -9,25 +9,59 @@
 
     &__item {
       width: 100vw;
-      @include util.flex(column, center);
+      @include util.flex(center, row);
     }
   }
 }
 
 .item {
-  &__title {
+  @include util.flex(center, column);
 
+  &__title {
+    font-family: util.$opensans;
+    font-size: 2rem;
+    color: util.$orange;
+    margin: 10px 0;
   }
 
   &__image {
-    
+    height: 200px;
+    width: auto;
   }
 
   &__button {
-    
+    width: 130px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: util.$orange;
+    background-color: util.$neutral;
+    border: 1px util.$orange solid;
+    border-radius: 14px;
+    padding: 3px;
+    cursor: pointer;
+    margin: 10px 0;
+    @include util.transition;
+    @include util.barlow;
+
+    &:hover {
+      background-color: util.$orange;
+      color: util.$neutral;
+    }
+  }
+}
+
+.arrow {
+  background-color: util.$orange;
+  width: 30px;
+  height: 30px;
+  margin: 15px;
+
+  &_left {
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
   }
 
-  &__link {
-    
+  &_right {
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
   }
 }
