@@ -1,0 +1,33 @@
+@use "../util/" as util;
+
+.slider {
+  background-color: util.$neutral-light;
+
+  &-wrapper {
+    display: flex;
+    width: 500vw;
+
+    &__item {
+      width: 100vw;
+      @include util.flex(column, center);
+    }
+  }
+}
+
+.item {
+  &__title {
+
+  }
+
+  &__image {
+    
+  }
+
+  &__button {
+    
+  }
+
+  &__link {
+    
+  }
+}

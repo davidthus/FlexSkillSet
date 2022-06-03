@@ -221,6 +221,21 @@ a:active {
   background-color: #25222F;
 }
 
+.slider {
+  background-color: #25222F;
+}
+.slider-wrapper {
+  display: flex;
+  width: 500vw;
+}
+.slider-wrapper__item {
+  width: 100vw;
+  display: flex;
+  justify-content: column;
+  align-items: center;
+  flex-direction: center;
+}
+
 .footer {
   font-family: "Barlow Condensed", Helvetica, sans-serif;
   font-weight: 700;
