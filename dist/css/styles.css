@@ -15,10 +15,6 @@ body {
   color: #FFFFFF;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 header, footer {
   font-family: "Barlow Condensed", Helvetica, sans-serif;
   font-weight: 700;
@@ -280,6 +276,7 @@ a:active {
   width: 30px;
   height: 30px;
   margin: 15px;
+  cursor: pointer;
 }
 .arrow_left {
   -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
@@ -288,6 +285,9 @@ a:active {
 .arrow_right {
   -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
           clip-path: polygon(100% 50%, 0 0, 0 100%);
+}
+.arrow:hover {
+  background-color: #3864C2;
 }
 
 .footer {
