@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -222,7 +223,7 @@ a:active {
 }
 .slider-wrapper {
   display: flex;
-  width: 500vw;
+  width: 300vw;
 }
 .slider-wrapper__item {
   width: 100vw;
@@ -290,6 +291,30 @@ a:active {
   background-color: #3864C2;
 }
 
+.skillset {
+  margin-left: 2em;
+}
+.skills {
+  list-style-type: arrows;
+  font-size: 1.4rem;
+}
+@counter-style arrows {
+  system: cyclic;
+  symbols: "→";
+  suffix: " ";
+}
+.job__title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+.job__opinion-title {
+  color: #FF9721;
+}
+.job__opinion-paragraph {
+  font-size: 1.3rem;
+}
+
 .footer {
   font-family: "Barlow Condensed", Helvetica, sans-serif;
   font-weight: 700;
@@ -312,6 +337,16 @@ a:active {
 .main {
   padding: 6.5em 0;
   background-color: #000413;
+}
+.main__title {
+  color: #FF9721;
+  font-family: "Barlow Condensed", Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+.main_padding {
+  padding: 6.5em 5em;
 }
 
 .content_collabs {

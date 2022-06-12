@@ -1,0 +1,24 @@
+@use "../util/" as util;
+
+.skillset {
+  margin-left: 2em;
+
+  &__title {
+
+  }
+}
+
+.skills {
+  list-style-type: arrows;
+  font-size: 1.4rem;
+
+  &__item {
+    
+  }
+}
+
+@counter-style arrows {
+  system: cyclic;
+  symbols: '\2192';
+  suffix: " ";
+}
