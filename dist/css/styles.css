@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -13,10 +14,6 @@ body {
   font-family: "Roboto", Helvetica, sans-serif;
   background-color: #000413;
   color: #FFFFFF;
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 header, footer {
@@ -221,6 +218,103 @@ a:active {
   background-color: #25222F;
 }
 
+.slider {
+  background-color: #25222F;
+}
+.slider-wrapper {
+  display: flex;
+  width: 300vw;
+}
+.slider-wrapper__item {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.item__title {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 2rem;
+  color: #FF9721;
+  margin: 10px 0;
+}
+.item__image {
+  height: 200px;
+  width: auto;
+}
+.item__button {
+  width: 130px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #FF9721;
+  background-color: #000413;
+  border: 1px #FF9721 solid;
+  border-radius: 14px;
+  padding: 3px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: 0.6s;
+  font-family: "Barlow Condensed", Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+.item__button:hover {
+  background-color: #FF9721;
+  color: #000413;
+}
+
+.arrow {
+  background-color: #FF9721;
+  width: 30px;
+  height: 30px;
+  margin: 15px;
+  cursor: pointer;
+}
+.arrow_left {
+  -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
+          clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+.arrow_right {
+  -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+          clip-path: polygon(100% 50%, 0 0, 0 100%);
+}
+.arrow:hover {
+  background-color: #3864C2;
+}
+
+.skillset {
+  margin-left: 2em;
+}
+.skills {
+  list-style-type: arrows;
+  font-size: 1.4rem;
+}
+@counter-style arrows {
+  system: cyclic;
+  symbols: "→";
+  suffix: " ";
+}
+.job__title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+.job__opinion-title {
+  color: #FF9721;
+}
+.job__opinion-paragraph {
+  font-size: 1.3rem;
+}
+
 .footer {
   font-family: "Barlow Condensed", Helvetica, sans-serif;
   font-weight: 700;
@@ -243,6 +337,16 @@ a:active {
 .main {
   padding: 6.5em 0;
   background-color: #000413;
+}
+.main__title {
+  color: #FF9721;
+  font-family: "Barlow Condensed", Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+.main_padding {
+  padding: 6.5em 5em;
 }
 
 .content_collabs {
